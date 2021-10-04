@@ -1,4 +1,4 @@
-const learnArray =["Stephane","Aurore","JC","Fanny","Stephanie","Fabrice","Bruno","Raoni","Rene","Francis","Batcheba","Rouslan","Frederic","Phil","Michael","Antoine"];
+const learnArray =["Stephane","Aurore","JC","Fanny","Stephanie","Fabrice","Bruno","Raoni","Rene","Francis","Batcheba","Rouslan","Frederic","Phil","Michael","Antoine","Nicolaus"];
 
 function colorrnd()
 {
@@ -46,12 +46,8 @@ function addElement (name) {
     document.querySelector('article').appendChild(newSect);
   }
 
-  function shuffle(array) {
-    array.sort(() => Math.random() - 0.5);
-  }
-
   function createAll(){
-      let shuffleArray = learnArray.sort(() => Math.random() - 0.5);
+      let shuffleArray = learnArray.sort(() => Math.random() - 0.3);
       shuffleArray.forEach(element => {
           addElement(element);          
       });
