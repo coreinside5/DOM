@@ -23,6 +23,7 @@ function colorrnd()
   return color;
 }
 
+
 const impElt = document.querySelectorAll('.important');
 console.log(impElt);
 impElt.forEach(element => {
